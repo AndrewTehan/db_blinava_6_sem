@@ -1,0 +1,17 @@
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\lab3.dacpac
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\lab3.dll
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\lab3.pdb
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\lab3.dll
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\lab3.pdb
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.SqlServer.Server.dll
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.Data.SqlClient.pdb
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.SqlServer.Server.pdb
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\bin\Debug\Microsoft.SqlServer.Server.xml
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\lab3.sqlproj.CopyComplete
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\Model.xml
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\refactor.xml
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\postdeploy.sql
+C:\Users\Andrew\Desktop\6_sem\БД\3\lab3\obj\Debug\predeploy.sql

@@ -1,0 +1,47 @@
+//c#
+internal async Task GetUnion(string? name1, string? name2)
+        {
+            try
+            {
+                await Conn.OpenAsync();
+                using (var comm = new SqlCommand("GetUnion", Conn))
+                {
+                    comm.CommandType = CommandType.StoredProcedure;
+                    comm.Parameters.AddWithValue("@first", name1);
+                    comm.Parameters.AddWithValue("@second", name2);
+                    SqlParameter test = comm.Parameters.Add("@union", SqlDbType.NVarChar, 255);
+                    test.Direction = ParameterDirection.Output;
+                    var reader = comm.ExecuteNonQuery();
+                    var result = test.Value.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (Conn.State == ConnectionState.Open)
+                    Conn.Close();
+            }
+        }
+
+
+//sql
+
+
+create or alter procedure GetUnion (@first nvarchar(255), @second nvarchar(255), 
+								@union nvarchar(255) output)
+as
+begin
+	DECLARE @firstd geography;  
+	DECLARE @secondd geography;  
+	DECLARE @result geography;  
+	SELECT @firstd = Coords FROM ComplexesRegions WHERE RegionName = @first;  
+	SELECT @secondd = Coords FROM ComplexesRegions WHERE RegionName = @second;
+	if (@firstd is null or @secondd is null)
+		return null;
+	SELECT @result = @firstd.MakeValid().STUnion(@secondd.MakeValid()).MakeValid();
+	SELECT @union = @result.STAsText();
+	return;
+end;
